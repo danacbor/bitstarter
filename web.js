@@ -2,9 +2,9 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-var buffer = fs.readFileSync('index.html', 'utf8');
+var buffer = fs.readFileSync('index.html');
 
-console.log(buffer.toString());
+//console.log(buffer.toString());
 
 app.get('/', function(request, response) {
     //response.send('Hello Word test 2!');
